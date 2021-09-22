@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-black: #181818;
+  --color-gray: #474747;
+  --color-white-one: #EBEBEB;
+  --color-white-two: #F6F6F6;
+  --color-primary-white: #212429;
+  --color-primary-black: #FFFFFF;
+
+  /* Fonte */
+  --montserrat: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--montserrat);
+}
+
+.white-bg {
+  background: var(--color-white-two);
+  color: #000;
+}
+
+.black-bg {
+  background: var(--color-black);
+  color: white;
+}
+
+.main-bg {
+  background: url('/assets/img/shoesjordan.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  min-height: 100vh;
+}
+
+.main-content {
+  max-width: 124rem;
+  margin: 0 auto;
+  color: var(--color-black);
+  padding: 0 3rem;
+}
+
+.promo-footer,
+.jordan-title,
+.jordan-description {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--color-primary-black);
+}
+
+.jordan-title {
+  background: var(--color-white-two);
+  color: var(--color-black);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.jordan-img {
+  height: 37.8rem;
+  position: relative;
+}
+
+.jordan-description {
+  justify-content: start;
+  height: 100%;
+  color: var(--color-primary-black);
+}
+
+.description-content {
+  max-width: 46rem;
+  z-index: 1;
+}
+
+.description-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.901rem;
+  margin-bottom: 2rem;
+}
+
+.description-content p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 3.531rem;
+}
+
+.jordan-opacity {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6)
+} 
+
+.destaques-content {
+  min-height: 50vh;
+  padding: 5.8rem 0 10rem;
+}
+
+.destaque-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.destaque-title h1 {
+  line-height: 6.278rem;
+  font-size: 3.2rem;
+}
+
+.destaque-title p {
+  line-height: 3.531rem;
+  font-size: 1.8rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.card {
+  height: 30.2rem;
+  width: 30rem;
+  background: #EBE9EA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .destaque-title p {
+    text-align: center;
+    max-width: 37.4rem;
+  }
+
+  .grid {
+    gap: 3rem;
+  }
+
+  .card {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+
+  .destaques-content {
+    padding-bottom: 5rem;
+  }
+}
+
